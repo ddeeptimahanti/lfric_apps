@@ -1,0 +1,20 @@
+{# ########################################################################### #}
+{# (c) Crown copyright 2024 Met Office. All rights reserved. #}
+{# The file LICENCE, distributed with this code, contains details of the terms #}
+{# under which the code may be used. #}
+{# ########################################################################### #}
+{% do LOG.debug("Entered site/pawsey/groups.cylc") %}
+
+{%- do site_groups.update({
+    "gungho_model": [
+        "gungho_model_baroclinic-C24_MG_setonix_gnu_fast-debug-64bit",
+        "gungho_model_baroclinic-C24_MG_setonix_cce_fast-debug-64bit",
+    ],
+    "lfric_atm_c192": [
+        "lfric_atm_c192_gnu",
+        "lfric_atm_c192_cce",
+    ],
+    }) %}
+
+{% do LOG.debug("Finished in site/pawsey/groups.cylc") %}
+
