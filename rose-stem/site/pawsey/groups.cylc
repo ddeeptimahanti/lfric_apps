@@ -10,11 +10,17 @@
         "gungho_model_baroclinic-C24_MG_setonix_gnu_fast-debug-64bit",
         "gungho_model_baroclinic-C24_MG_setonix_cce_fast-debug-64bit",
     ],
-    "lfric_atm_c192": [
-        "lfric_atm_c192_gnu",
-        "lfric_atm_c192_cce",
-    ],
+    "setonix_omp_developer_cce": [
+        "lfric_atm_nwp_gal9_1T-C48_MG_setonix_cce_fast-debug-64bit",
+        "lfric_atm_nwp_gal9_2T-C48_MG_setonix_cce_fast-debug-64bit",
+      ],
+    "setonix_omp_developer_gnu": [
+        "lfric_atm_nwp_gal9_1T-C48_MG_setonix_gnu_fast-debug-64bit",
+        "lfric_atm_nwp_gal9_2T-C48_MG_setonix_gnu_fast-debug-64bit",
+        ],
+
     }) %}
+
 
 {% do LOG.debug("Finished in site/pawsey/groups.cylc") %}
 

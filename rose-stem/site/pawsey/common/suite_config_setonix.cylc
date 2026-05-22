@@ -12,9 +12,7 @@
                              'module load .pfunit/4.10.0-twwu3qk ; '~
                              'module load .fcm/2021.05.0-65djiil ; '~
                              'module load .time/1.9-lsi4ax6 ; '~
-                             'module load .py-psyclone/3.1.0-vlt43v4' %}
-
-#                             'export PATH="$HOME/bin:$PATH"' %}
+                             'module load .py-psyclone/3.2.2-vedhhak' %}
 
 {% set setonix_modules_perftools = 'module load perftools' %}
 
@@ -51,7 +49,7 @@
             HYPERTHREADS = 1
             CORES_PER_NODE = 128
             NUMA_REGIONS_PER_NODE = 8
-            BIG_DATA_DIR = "$MYSCRATCH/lfric/data"
+            BIG_DATA_DIR = "/software/projects/pawsey0835/ddeeptimahanti/lfricadmin/data"
             TARGET_PLATFORM = "pawsey-setonix"
             OMP_PLACES = cores
             OMP_PROC_BIND = close

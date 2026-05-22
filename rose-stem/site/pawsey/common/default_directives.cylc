@@ -12,6 +12,11 @@
         "build_wallclock": 240,
         "build_cpus": 64,
 
+        "lfric_atm": {
+            "build_wallclock": 120,
+            "build_memory": [25, "GB"],
+        },
+
         "mesh": {
             "mesh_wallclock": 20,
             "mesh_cpus": 64,
