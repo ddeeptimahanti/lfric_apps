@@ -5,7 +5,7 @@
                              'module unload .cray-mpich/9.0.1-t6yjuyi ; '~
 			     'export LD_LIBRARY_PATH=/opt/cray/pe/mpich/9.0.1/ofi/gnu/12.3/lib:$LD_LIBRARY_PATH'  %}
 
-{% set setonix_modules_cce = 'module use /software/projects/pawsey0835/ddeeptimahanti/modules ; '~
+{% set setonix_modules_cce18 = 'module use /software/projects/pawsey0835/ddeeptimahanti/modules ; '~
                              'module load lfric/cce/18.0.1 ; '~ 
                              'module use /software/projects/pawsey0835/ddeeptimahanti/setonix/2025.04/modules/zen3/gcc/13.3.0/dependencies ; '~
                              'module use /software/projects/pawsey0835/ddeeptimahanti/setonix/2025.04/modules/zen3/gcc/13.3.0/astro-applications/ ; '~
@@ -13,6 +13,16 @@
                              'module load .fcm/2021.05.0-65djiil ; '~
                              'module load .time/1.9-lsi4ax6 ; '~
                              'module load .py-psyclone/3.2.2-vedhhak' %}
+
+{% set setonix_modules_cce = 'module use /software/projects/pawsey0835/ddeeptimahanti/modules ; '~
+                             'module load lfric/cce/20.0.0 ; '~
+                             'module use /software/projects/pawsey0835/ddeeptimahanti/setonix/2025.11/modules/zen3/gcc/14.2.0/dependencies ; '~
+                             'module use /software/projects/pawsey0835/ddeeptimahanti/setonix/2025.11/modules/zen3/gcc/14.2.0/astro-applications/ ; '~
+                             'module load .pfunit/4.10.0-wv3f365 ; '~
+                             'module load .time/1.9-lsi4ax6 ; '~
+			     'module use /software/setonix/2025.08/modules/zen3/gcc/14.2.0/dependencies ; '~
+ 			     'module load .py-pyyaml/6.0.2-mysz5xs ; '~	
+                             'module load .py-psyclone/3.2.2-2seivsl' %}
 
 {% set setonix_modules_perftools = 'module load perftools' %}
 

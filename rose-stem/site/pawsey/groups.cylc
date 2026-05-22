@@ -6,15 +6,17 @@
 {% do LOG.debug("Entered site/pawsey/groups.cylc") %}
 
 {%- do site_groups.update({
-    "gungho_model": [
+    "gungho_model_gnu": [
         "gungho_model_baroclinic-C24_MG_setonix_gnu_fast-debug-64bit",
+    ],
+    "gungho_model_cce": [
         "gungho_model_baroclinic-C24_MG_setonix_cce_fast-debug-64bit",
     ],
-    "setonix_omp_developer_cce": [
+    "lfric_atm_cce": [
         "lfric_atm_nwp_gal9_1T-C48_MG_setonix_cce_fast-debug-64bit",
         "lfric_atm_nwp_gal9_2T-C48_MG_setonix_cce_fast-debug-64bit",
       ],
-    "setonix_omp_developer_gnu": [
+    "lfric_atm_gnu": [
         "lfric_atm_nwp_gal9_1T-C48_MG_setonix_gnu_fast-debug-64bit",
         "lfric_atm_nwp_gal9_2T-C48_MG_setonix_gnu_fast-debug-64bit",
         ],
