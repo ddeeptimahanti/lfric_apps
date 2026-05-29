@@ -40,16 +40,16 @@ large_scale_precipitation/%.o: private FFLAGS_SAFE_OPTIMISATION = -O2 -hfp0 -hfl
 # DEBUG FLAGS
 # ==========================================================================
 # UKCA
-%ukca_emiss_mode_mod.o: private FFLAGS_DEBUG = -G0
-%ukca_step_control_mod.o: private FFLAGS_DEBUG = -G0
+%ukca_emiss_mode_mod.o: private FFLAGS_DEBUG = 
+%ukca_step_control_mod.o: private FFLAGS_DEBUG = 
 
 # LFRic Apps
-%aerosol_ukca_alg_mod_psy.o: private FFLAGS_DEBUG = -G0
-%bl_exp_alg_mod_psy.o: private FFLAGS_DEBUG = -G0
-%bl_imp_alg_mod_psy.o: private FFLAGS_DEBUG = -G0
-%conv_comorph_alg_mod_psy.o: private FFLAGS_DEBUG = -G0
-%conv_comorph_kernel_mod.o: private FFLAGS_DEBUG = -G0
-%conv_gr_alg_mod_psy.o: private FFLAGS_DEBUG = -G0
-%gungho_model_mod.o: private FFLAGS_DEBUG = -G0
-%init_aerosol_fields_alg_mod_psy.o: private FFLAGS_DEBUG = -G0
-%jules_extra_kernel_mod.o: private FFLAGS_DEBUG = -G0
+%aerosol_ukca_alg_mod_psy.o: private FFLAGS_DEBUG = 
+%bl_exp_alg_mod_psy.o: private FFLAGS_DEBUG = 
+%bl_imp_alg_mod_psy.o: private FFLAGS_DEBUG = 
+%conv_comorph_alg_mod_psy.o: private FFLAGS_DEBUG = 
+%conv_comorph_kernel_mod.o: private FFLAGS_DEBUG = 
+%conv_gr_alg_mod_psy.o: private FFLAGS_DEBUG = 
+%gungho_model_mod.o: private FFLAGS_DEBUG = 
+%init_aerosol_fields_alg_mod_psy.o: private FFLAGS_DEBUG = 
+%jules_extra_kernel_mod.o: private FFLAGS_DEBUG = 

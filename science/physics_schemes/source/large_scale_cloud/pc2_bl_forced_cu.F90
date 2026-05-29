@@ -101,15 +101,15 @@ logical, intent(in) :: l_wtrac_bl    ! Controls water tracer storage
 integer :: i, j, k
 
 real ::                                                                        &
- qcl_forced,                                                                   &
- cf_forced,                                                                    &
+ qcl_forced=0.0,                                                                   &
+ cf_forced=0.0,                                                                    &
             ! forced cloud water content and fraction
- dqcl,                                                                         &
- dcfl,                                                                         &
+ dqcl=0.0,                                                                         &
+ dcfl=0.0,                                                                         &
             ! forced cloud water content and fraction increments
- qcl_tol,                                                                      &
+ qcl_tol=0.0,                                                                      &
             ! max tolerated forced cloud water content
- cf_base,                                                                      &
+ cf_base=0.0,                                                                      &
             ! forced cloud fraction at cloud base
  zc_depth
             ! forced cloud depth

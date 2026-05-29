@@ -229,7 +229,7 @@ real(kind=real_umphys) ::                                                      &
 
 !  Local scalars--------------------------------------------------------
 
-integer :: k,i,j,                                                              &
+integer :: k,i=0,j=0,                                                              &
 !       Loop counters: K   - vertical level index
 !                      I,J - horizontal position index
           qc_points

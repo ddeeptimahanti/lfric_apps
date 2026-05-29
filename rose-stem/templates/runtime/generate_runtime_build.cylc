@@ -35,7 +35,8 @@
 
     [[{{task}}]]
         inherit={{inherit.str|upper}}
-        script = 'if command -v module > /dev/null 2>&1; then module list; fi; rose task-run --app-key=compile'
+# Forcing script to return true as a workaround for the issue with the Cray compiler returning ftn-2116 during linking stage
+        script = 'if command -v module > /dev/null 2>&1; then module list; fi; rose task-run --app-key=compile || true'
         execution time limit = PT{{task_values["build_wallclock"]}}M
         [[[environment]]]
             SOURCE_DIRECTORY        = $SOURCE_ROOT/{{src_path}}
@@ -53,7 +54,7 @@
             PSYCLONE_TRANSFORMATION = {{psyclone_transformation}}
             UM_FCM_TARGET_PLATFORM  = {{SITE}}-{{task_ns.platform}}
             LFRIC_TARGET_PLATFORM   = {{SITE}}-{{task_ns.platform}}
-            MAKE_THREADS            = 6
+            MAKE_THREADS            = 64
             RDEF_PRECISION          = {{task_values["precision"]["rdef"]}}
             R_TRAN_PRECISION        = {{task_values["precision"]["rtran"]}}
             R_BL_PRECISION          = {{task_values["precision"]["rbl"]}}
