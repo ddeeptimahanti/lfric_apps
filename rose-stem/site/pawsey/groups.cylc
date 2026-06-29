@@ -12,6 +12,9 @@
     "gungho_model_cce": [
         "gungho_model_baroclinic-C24_MG_setonix_cce_fast-debug-64bit",
     ],
+    "gungho_model_cce_full": [
+        "gungho_model_baroclinic-C24_MG_setonix_cce_full-debug-64bit",
+    ],
     "lfric_atm_cce": [
         "lfric_atm_nwp_gal9_1T-C48_MG_setonix_cce_fast-debug-64bit",
         "lfric_atm_nwp_gal9_2T-C48_MG_setonix_cce_fast-debug-64bit",
