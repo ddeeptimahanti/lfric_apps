@@ -101,15 +101,15 @@ logical, intent(in) :: l_wtrac_bl    ! Controls water tracer storage
 integer :: i, j, k
 
 real ::                                                                        &
- qcl_forced = 0.0,                                                                   &
- cf_forced = 0.0,                                                                    &
+ qcl_forced,                                                                   &
+ cf_forced,                                                                    &
             ! forced cloud water content and fraction
- dqcl = 0.0,                                                                         &
- dcfl = 0.0,                                                                         &
+ dqcl,                                                                         &
+ dcfl,                                                                         &
             ! forced cloud water content and fraction increments
- qcl_tol = 0.0,                                                                      &
+ qcl_tol,                                                                      &
             ! max tolerated forced cloud water content
- cf_base = 0.0,                                                                      &
+ cf_base,                                                                      &
             ! forced cloud fraction at cloud base
  zc_depth
             ! forced cloud depth
@@ -129,6 +129,15 @@ character(len=*), parameter :: RoutineName='PC2_BL_FORCED_CU'
 integer(kind=jpim), parameter :: zhook_in  = 0
 integer(kind=jpim), parameter :: zhook_out = 1
 real(kind=jprb)               :: zhook_handle
+
+!initialise the variables to avoid variables used before definition with CCE 18.0.1
+qcl_forced = 0.0 
+cf_forced = 0.0 
+dqcl = 0.0 
+dcfl = 0.0 
+qcl_tol = 0.0 
+cf_base = 0.0
+
 !----------------------------------------------------------------------
 if (lhook) call dr_hook(ModuleName//':'//RoutineName,zhook_in,zhook_handle)
 !----------------------------------------------------------------------
