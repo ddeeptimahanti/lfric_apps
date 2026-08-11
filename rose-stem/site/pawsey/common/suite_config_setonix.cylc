@@ -43,8 +43,8 @@
         inherit = SETONIX_BASE
         platform = setonix-slurm
         [[[directives]]]
-	    --account = pawsey0001
-	    --partition = askaprt
+	    --account = pawsey0835
+	    --partition = work
             --nodes = 1
             --ntasks = 6
             --cpus-per-task = 1
