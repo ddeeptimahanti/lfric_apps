@@ -130,7 +130,7 @@ integer(kind=jpim), parameter :: zhook_in  = 0
 integer(kind=jpim), parameter :: zhook_out = 1
 real(kind=jprb)               :: zhook_handle
 
-!initialise the variables to avoid variables used before definition with CCE 18.0.1
+!initialise the variables to avoid Variables used before definition error with CCE 18.0.1
 qcl_forced = 0.0 
 cf_forced = 0.0 
 dqcl = 0.0 
